@@ -1,0 +1,513 @@
+.main_section{
+	display:flex;
+	margin:auto;
+	max-width:1112px;
+	flex-wrap:wrap;
+	margin-bottom:100px;
+}
+
+@media only screen and (max-width: 768px){
+	.main_section{
+		margin-bottom:25px;
+	}
+}
+
+.section_about{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:flex-end;
+}
+
+.section_about__discribe{
+	width:50%;
+}
+
+.title__big{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 59px;
+	margin:0;
+	margin-bottom:30px;
+	width:100%;
+}
+
+.section_about__subtitle{
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+}
+
+.section_about__text{
+	font-size: 16px;
+	line-height: 26px;
+}
+
+.section_about__more{
+	font-size: 14px;
+	line-height: 17px;
+	color:#278AFF;
+}
+
+@media only screen and (max-width: 768px) { 
+	.main{
+		padding:0 30px;
+		width:100%;
+	}
+	
+	.section_about{
+		justify-content:center;
+		margin-bottom:50px;
+	}
+	
+	.section_about__discribe{
+		width:100%;
+		margin-bottom:30px;
+	}
+	
+	
+	.section_about__video{
+	/*при экране 360 не уменьшается, а сдвигается вправо - не понимаю, почему  
+	max-width: 75%;
+    height: auto;*/
+	display:none;
+	}
+}
+
+.section_features{
+	display:flex;
+	justify-content:space-between;
+}
+
+.title_small{
+	font-size: 18px;
+	line-height: 22px;
+	margin:0;
+	margin-top:20px;
+}
+
+.features_title{
+	text-align:center;
+}
+
+.section__text{
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.features__text{
+	text-align:center;
+}
+
+.section_features__comfort,
+.section_features__quality,
+.section_features__masters{
+	padding:80px 30px 0;
+	position:relative;
+	margin-bottom:20px;
+}
+
+.section_features__comfort::before{
+	content:"";
+	background:url(img/comfort.jpg) no-repeat;
+	position:absolute;
+	width:60px;
+	height:60px;
+	top:0;
+	left:calc(50% - 30px);
+}
+
+.section_features__quality::before{
+	content:"";
+	background:url(img/quality.jpg) no-repeat;
+	position:absolute;
+	width:60px;
+	height:60px;
+	top:0;
+	left:calc(50% - 30px);
+}
+
+.section_features__masters::before{
+	content:"";
+	background:url(img/masters.jpg) no-repeat;
+	position:absolute;
+	width:60px;
+	height:60px;
+	top:0;
+	left:calc(50% - 30px);
+}
+
+.container{
+	display:flex;
+	justify-content:space-between;
+	padding:0;
+}
+
+.title_medium{
+	display:block;
+	margin:0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 44px;
+	width:100%;
+	margin-bottom:35px;
+	text-align:left;
+}
+
+.popular__title{
+	margin-top:20px;
+}
+
+ .section_popular__item{
+	 padding:0 0;
+	 max-width:350px;
+ }
+ 
+ .btn_small{
+	 display:block;
+	 width:112px;
+	 height:34px;
+	 margin:15px 0;
+ }
+ 
+ @media only screen and (min-width: 480px) and (max-width: 768px){	
+	.service-foto{
+		max-width:40vw;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.section_popular__item{
+		max-width:90%;
+    }
+	
+	.service-foto{
+		max-width:90vw;
+		overflow:hidden;
+	}
+}
+
+ .price__menu{
+	 margin-bottom:55px;
+ }
+ 
+.price_table{
+	display:flex;
+	justify-content:flex-start;
+	width:75%;
+}
+ 
+.price_title{
+	font-weight: 500;
+}
+ 
+.price_table__item{
+	width:50%;
+}
+ 
+.price_table__item:first-child{
+	margin-right:125px;
+}
+ 
+td{
+	vertical-align: middle;
+}
+
+td:nth-child(2n){
+	color:#00BF78;
+} 
+ 
+ @media only screen and (max-width: 768px){
+	.price__menu li{
+		 margin:10px;
+	 }
+	 
+	.price_table{
+		width:75vw;
+		flex-wrap:wrap;
+	 }
+	 
+	.price_table__item{
+		width:85vw;
+	}
+	
+	.price_table__item:first-child{
+		margin-right:0;
+	}
+	
+	td{
+	text-align: left;
+	vertical-align:middle;
+	width:70px;
+	}
+ }
+ 
+.section_masters{
+	background-color:#F8F6F7;
+} 
+ 
+.experience{
+	text-transform:uppercase;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 15px;
+	color:#333;
+}
+ 
+.master__card{
+	background-size:cover;
+	height:300px;
+	border-radius:8px;
+	position:relative;
+	overflow:hidden;
+	}
+
+.card__krasnova{
+	background-image:url("img/krasnova.png");
+}	
+
+.card__kalilova{
+	background-image:url("img/kalilova.png");
+}	
+
+.card__kiseleva{
+	background-image:url("img/kiseleva.png");
+}	
+.card__ivanova{
+	background-image:url("img/ivanova.png");
+}	
+
+.master__card:hover::before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:#000;
+	opacity:0.5;
+	z-index:1;
+}
+ 
+.master__card:hover::after{
+	content:"Записаться к маcтеру";
+	position:absolute;
+	left:calc(50% - 60px);
+	top:0;
+	right:0;
+	bottom:0;
+	max-width:120px;
+	color:#fff;
+	font-weight:500;
+	text-align:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	z-index:2;
+}
+ 
+ @media only screen and (max-width: 768px){
+	 .container{
+		 max-width:100%;
+	 }
+ }
+ 
+.section_portfolio{
+	position:relative;
+} 
+
+.section_portfolio::before{
+	content:url(img/arrow.png);
+	position:absolute;
+	top:75px;
+	right:50px;
+	width:20px;
+	height:15px;
+}
+
+.section_portfolio::after{
+	content:url(img/arrow.png);
+	position:absolute;
+	top:76px;
+	right:115px;
+	width:20px;
+	height:15px;
+	transform:rotate(180deg);
+	transform-origin:100% 50%;
+}
+
+.container_portfolio{
+	margin:-50px 0 116px;
+}
+
+.container-fluid{
+	padding-left:0px;
+}
+
+.portfolio__card{
+	background-size:cover;
+	width:338px;
+	height:338px;
+	border-radius:8px;
+	position:relative;
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.card__makeup{
+	background-image:url("img/makeup.png");
+}
+ .card__wedding{
+	background-image:url("img/wedding.png");
+}
+ .card__nail{
+	background-image:url("img/nail.png");
+}
+ .card__hair{
+	background-image:url("img/hair.png");
+}
+
+.portfolio__card:hover{
+	transform:scale(1.05);
+}
+
+.portfolio__card:hover::before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-color:#000;
+	opacity:0.5;
+	z-index:1;
+}
+ 
+.portfolio__card:hover::after{
+	content:"Увеличить";
+	background:url(img/lupa.png) no-repeat 36px 110px;
+	position:absolute;
+	left:calc(50% - 60px);
+	top:0;
+	right:0;
+	bottom:0;
+	max-width:120px;
+	color:#fff;
+	font-weight:500;
+	text-align:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	z-index:2;
+}
+
+  @media only screen and (max-width: 768px){
+		 
+	 .container-fluid{
+	  overflow:hidden;
+	  margin:0;
+	  margin-bottom:50px;
+	  padding:0;
+	}
+	
+	.portfolio__card{
+		 max-height:200px; 
+		 width:auto;
+		 margin-bottom:10px;
+	 }
+
+	 .portfolio__card:hover{
+		 transform:scale(1);
+	 }
+	 
+	 .portfolio__card:hover::after{
+	content:"";
+	background:url(img/lupa.png) no-repeat 36px 110px;
+	position:absolute;
+	left:calc(50% - 60px);
+	top:0;
+	right:0;
+	bottom:0;
+	max-width:120px;
+	color:#fff;
+	font-weight:500;
+	text-align:center;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	z-index:2;
+ }
+ 
+ .section_portfolio::before,
+ .section_portfolio::after{
+	 display:none;
+}
+}
+
+.clients__text{
+	font-size: 16px;
+	line-height: 20px;
+	display:block;
+	width:100%;
+	text-align:center;
+	margin-bottom:50px;
+}
+
+.client_card_container{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	align-items:center;
+	width:1110px;
+}
+
+.client__card{
+	height:65px;
+	width:135px;
+	opacity:0.5;
+	align-self:center;
+} 
+ 
+.card__wella{
+	background:url("img/wella.png") no-repeat;
+} 
+ 
+ .card__shwarc{
+	background:url("img/shwarc.png") no-repeat;
+} 
+
+.card__tigi{
+	margin-top:30px;
+	background:url("img/tigi.png") no-repeat;
+} 
+ 
+.card__londa{
+	background:url("img/londa.png") no-repeat;
+} 
+
+.card__nioxin{
+	background:url("img/nioxin.png") no-repeat;
+	margin-top:30px;
+} 
+ 
+ @media only screen and (max-width: 768px){
+	.clients__text{
+		margin-bottom:20px;
+} 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
