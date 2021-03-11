@@ -60,29 +60,29 @@ header{
 	justify-content:space-between;
 }
 
-.logo{
+.header-top__logo{
 	font-size:24px;
 	font-weight: bold;
 }
 
-nav .menu li:not(last-child){
+.header-top__menu li:not(last-child){
 	display:inline-block;
 	font-size:14px;
 	line-height: 17px;
 	margin-right:28px;
 }
 
-nav .menu li a:hover{
+.header-top__menu li a:hover{
 	color:#00BF78;
 }
 
-.kontacts{
+.header-top__kontacts{
 	font-size: 18px;
 	line-height: 14px;
 	text-align:center;
 }
 
-.kontacts span{
+.header-top__kontacts span{
 	font-size: 11px;
 	line-height: 14px;
 }
@@ -93,19 +93,19 @@ nav .menu li a:hover{
 	align-items:center;
 }
 
-.hero{
+.header-middle__hero{
 	width:500px;
 	flex-shrink:0;	
 }
 
-.hero h1{
+.header-middle__hero h1{
 	font-size: 48px;
 	line-height: 59px;
 	font-weight: 600;
 	margin:0;
 }	
 
-.hero p{
+.header-middle__hero p{
 	font-size: 20px;
 	line-height: 24px;
 }
@@ -119,12 +119,12 @@ nav .menu li a:hover{
 	opacity:1;
 }
 
-.wellcome{
+.btn_large{
 	width: 203px;
 	height: 48px;
 }
 
-.girl{
+.header-middle__girl{
 	position:relative;
 	flex-shrink:0;	
 	overflow:hidden;
@@ -133,13 +133,13 @@ nav .menu li a:hover{
 	width:100%;
 } 
 
-.girl img{
+.header-middle__girl img{
 	display:block;
 	position:relative;
 	z-index:1;
 }
 
-.girl::before{
+.header-middle__girl::before{
 	content:'';
 	width: 472px;
 	height: 472px;
