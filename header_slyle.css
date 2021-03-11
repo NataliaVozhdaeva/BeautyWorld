@@ -66,8 +66,10 @@ ul{
 	font-weight: bold;
 }
 
-/*.navigation__checkbox{
-	display:none;
+/*
+Кнопка дя гамбургера. Не помню, зачем, помню, чт была нужна. Дойдем до js соображу, надеюсь
+.navigation__checkbox{
+	display:none;  
 }*/
 
 .menu li{
@@ -181,7 +183,7 @@ ul{
 		text-align:center;
 	}
 	
-	.navigation_menu{
+	.header__menu{
 		order:-1;
 		display:flex;
 		flex-direction:column;

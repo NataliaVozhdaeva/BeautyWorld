@@ -1,12 +1,17 @@
 .footer-top{
 	background: #F8F6F7;
-	padding:40px 260px 40px 165px;	
+	padding:40px 0;
+}
+
+.footer-top__container{
 	display:flex;
 	justify-content:space-between;
 	flex-wrap:wrap;
+	max-width:950px;
+	margin:0px auto;
 }
 
-.footer_text{
+.footer__text{
 	margin-bottom:30px;
 }
 
@@ -21,6 +26,7 @@
 	padding:40px 35px;
 	background-color:#fff;
 	box-sizing:border:box;
+	margin-left:210px;
 }
 
 .form_title{
@@ -68,14 +74,23 @@ input{
 		 text-align:center;
 	 }
 	 
-	 .footer__navigation{
+	.footer-top__container{
+	display:flex;
+	justify-content:center;
+	} 
+	 
+	.footer-top__form{
+		margin-left:0;
+}
+	 
+	 .footer_navigation{
 		 margin-left: 0px;
 	 }
 	 
 	 .footer__menu li{
 		 display:inline-block;
 		 width:20vw;
-		 margin:10px 0;
+		 margin:0;
 	 }
 	 
 	 input{

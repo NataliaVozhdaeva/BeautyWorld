@@ -26,7 +26,7 @@
 				<label for="navigation__checkbox"></label> -->
 				
 				<nav class='navigation'>
-				  <ul class="menu header__menu navigation_menu">
+				  <ul class="menu header__menu">
 					<li><a href=#>Услуги и цены</a></li>
 					<li><a href=#>Мастера</a></li>
 					<li><a href=#>Наши работы</a></li>
@@ -63,9 +63,8 @@
 	</div>	
 	</header>
 	
-	<main>
-		<div class="main">
-			<div class="main_section section_about">
+	<main class="main">
+		<div class="main_section section_about">
 			  <div class="section_about__discribe">
 				<h1 class="section__title title__big">О салоне</h1>
 				<p class="section_about__subtitle"> Мир красоты - это уютный салон в самом центре города. 
@@ -216,25 +215,25 @@
 				
 				<div class="container row">
 					<div class="col-sm-6 col-md-3 section_masters__item">
-						<a href=#><div class="master__card card__krasnova"></div></a>
+						<a href=#><div class="master__card"><img src="img/krasnova.png" alt="krasnova" /></div></a>
 						<h4 class="master_title title_small">Краснова Ирина</h4> 
 						<p class="section__text">Мастер ногтевого сервиса
 						<p class="experience">опыт работы 5 лет
 					</div>
 					<div class="col-sm-6 col-md-3 section_masters__item">
-						<a href=#><div class="master__card card__kalilova"></div></a>
+						<a href=#><div class="master__card"><img src="img/kalilova.png" alt="kalilova" /></div></a>
 						<h4 class="master_title title_small">Калилова Жанна</h4> 
 						<p class="section__text">Визажист-стилист
 						<p class="experience">опыт работы 5 лет
 					</div>
 					<div class="col-sm-6 col-md-3 section_masters__item">
-						<a href=#><div class="master__card card__kiseleva"></div></a>
+						<a href=#><div class="master__card"><img src="img/kiseleva.png" alt="kiseleva" /></div></a>
 						<h4 class="master_title title_small">Киселева Алина</h4> 
 						<p class="section__text">Парикмахер
 						<p class="experience">опыт работы 5 лет
 					</div>
 					<div class="col-sm-6 col-md-3 section_masters__item">
-						<a href=#><div class="master__card card__ivanova"></div></a>
+						<a href=#><div class="master__card"><img src="img/ivanova.png" alt="ivanova" /></div></a>
 						<h4 class="master_title title_small">Иванова Елена</h4> 
 						<p class="section__text">Мастер ногтевого сервиса
 						<p class="experience">опыт работы 5 лет
@@ -249,16 +248,16 @@
 			  </div>
 			 <div class="container-fluid container_portfolio row">
 			  <div class="col-md-3 col-sm-6">
-				<div class="portfolio__card card__makeup"></div>
+				<div class="portfolio__card"><img src="img/makeup.png" alt="makeup" /></div>
 			  </div>	
 			  <div class="col-md-3 col-sm-6">
-				<div class="portfolio__card card__wedding"></div>
+				<div class="portfolio__card"><img src="img/wedding.png" alt="wedding" /></div>
 			  </div>
 			  <div class="col-md-3 col-sm-6">		
-					<div class="portfolio__card card__nail"> </div>				
+					<div class="portfolio__card"> <img src="img/nail.png" alt="nail" /></div>				
 			  </div>		
 			  <div class="col-md-3 col-sm-6">
-					<div class="portfolio__card card__hair"></div>
+					<div class="portfolio__card"><img src="img/hair.png" alt="hair" /></div>
 			  </div>
 			</div>
 			
@@ -266,21 +265,19 @@
 				<div class="clients__text">Бренды, которые мы используем в работе</div>
 				
 				<div class="client_card_container">
-					<div class="client__card card__wella"></div>
-					<div class="client__card card__shwarc"></div>
-					<div class="client__card card__tigi"></div>
-					<div class="client__card card__londa"></div>
-					<div class="client__card card__nioxin"></div>
+					<div class="client__card"><img src="img/wella.png" alt="wella"/></div>
+					<div class="client__card"><img src="img/shwarc.png" alt="shwarc"/></div>
+					<div class="client__card"><img src="img/tigi.png" alt="tigi"/></div>
+					<div class="client__card"><img src="img/londa.png" alt="londa"/></div>
+					<div class="client__card"><img src="img/nioxin.png" alt="nioxin"/></div>
 				</div>
 			</div>
-		</div>
-	  </div>	
+		</div>	
 	</main>
 	
-	<footer>
-		<div class="footer">
+	<footer class="footer">
 		  <div class="footer-top">
-		  
+		  <div class="footer-top__container">
 			<div class="footer-top__kontacts">
 				<h1 class="section__title title__big">Контакты</h1>
 				<div class="footer_text">
@@ -309,10 +306,11 @@
 					<p class="text_small">Нажимая на кнопку вы соглашаетесь с <a href=# class="link personal-data">обработкой персональных данных</a>
 				</form>
 			</div>
+			</div>
 		  </div>
 		  
 			<div class="footer-bottom">
-				<div class="footer_text">
+				<div class="footer__text">
 					<p class="text_small">© 2020 «Море красоты»
 					<p class="text_small"><a class="link">Политика конфиденциальности</a>
 				</div>
@@ -325,8 +323,7 @@
 				  </ul>
 				</nav>
 			</div>
-		
-		</div>
+
 	</footer>
 	
   </div>	

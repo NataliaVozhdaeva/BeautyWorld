@@ -265,21 +265,6 @@ td:nth-child(2n){
 	overflow:hidden;
 	}
 
-.card__krasnova{
-	background-image:url("img/krasnova.png");
-}	
-
-.card__kalilova{
-	background-image:url("img/kalilova.png");
-}	
-
-.card__kiseleva{
-	background-image:url("img/kiseleva.png");
-}	
-.card__ivanova{
-	background-image:url("img/ivanova.png");
-}	
-
 .master__card:hover::before{
 	content:"";
 	position:absolute;
@@ -355,19 +340,6 @@ td:nth-child(2n){
 	position:relative;
 	overflow:hidden;
 	cursor:pointer;
-}
-
-.card__makeup{
-	background-image:url("img/makeup.png");
-}
- .card__wedding{
-	background-image:url("img/wedding.png");
-}
- .card__nail{
-	background-image:url("img/nail.png");
-}
- .card__hair{
-	background-image:url("img/hair.png");
 }
 
 .portfolio__card:hover{
@@ -465,38 +437,19 @@ td:nth-child(2n){
 }
 
 .client__card{
-	height:65px;
 	width:135px;
 	opacity:0.5;
 	align-self:center;
 } 
  
-.card__wella{
-	background:url("img/wella.png") no-repeat;
-} 
- 
- .card__shwarc{
-	background:url("img/shwarc.png") no-repeat;
-} 
-
-.card__tigi{
-	margin-top:30px;
-	background:url("img/tigi.png") no-repeat;
-} 
- 
-.card__londa{
-	background:url("img/londa.png") no-repeat;
-} 
-
-.card__nioxin{
-	background:url("img/nioxin.png") no-repeat;
-	margin-top:30px;
-} 
- 
  @media only screen and (max-width: 768px){
 	.clients__text{
 		margin-bottom:20px;
-} 
+	}
+
+	.client__card{
+	margin:10px;
+	} 
  }
  
  
