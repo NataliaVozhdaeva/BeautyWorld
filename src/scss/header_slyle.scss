@@ -1,3 +1,7 @@
+@import 'libs';
+$btn-main-color: #FB9475;
+
+
 html{
 	box-sizing:border-box;
 }
@@ -42,7 +46,7 @@ ul{
 }
 
 .header{
-	background-image:url('img/bg_top.png');
+	background-image:url('/img/bg_top.png');
 	margin-bottom:94px;
 }
 
@@ -67,24 +71,26 @@ ul{
 }
 
 /*
-Кнопка дя гамбургера. Не помню, зачем, помню, чт была нужна. Дойдем до js соображу, надеюсь
+Кнопка дя гамбургера. Не помню, зачем, помню, что была нужна. Дойдем до js соображу, надеюсь
 .navigation__checkbox{
 	display:none;  
 }*/
 
-.menu li{
+.menu{
+	 li{
 	display:inline-block;
 	font-size:14px;
 	line-height: 17px;
 	margin-right:28px;
-}
-
-.menu li a:hover{
-	color:#00BF78;
-}
-
-.menu li a:active{
-	color:#00BF78;
+		
+		a:hover{
+		color:#00BF78;
+		}
+		
+		a:active{
+		color:#00BF78;
+		}
+	}
 }
 
 .header-top__kontacts{
@@ -107,6 +113,8 @@ ul{
 .header-middle__hero{
 	max-width:500px;
 	flex-shrink:0;	
+	font-size: 20px;
+	line-height: 24px;
 }
 
 .hero__title{
@@ -116,23 +124,23 @@ ul{
 	margin:0;
 }	
 
-.header-middle__hero{
-	font-size: 20px;
-	line-height: 24px;
-}
-
 .btn{
-	background-color:#FB9475;
+	background-color:$btn-main-color;
 	font-size:14px;
 	border:none;
 	border-radius: 24px;
 	color:#fff;
 	opacity:1;
-}
-
-.btn_large{
+	
+	&_large{
 	width: 203px;
 	height: 48px;
+	}
+	
+	&:hover{
+		cursor:pointer;
+		background-color:darken($btn-main-color, 10%);
+	}
 }
 
 .header-middle__girl{
@@ -141,15 +149,9 @@ ul{
 	overflow:hidden;
 	margin:0;
 	max-width:524px;
-} 
-
-.header-middle__picture{
-	display:block;
-	position:relative;
-	z-index:1;
-}
-
-.header-middle__girl::before{
+	
+	
+	&::before{
 	content:'';
 	width: 472px;
 	height: 472px;
@@ -159,14 +161,23 @@ ul{
 	left:49px;
 	bottom:-110px;
 	z-index:0; 
-}
+	}
+} 
 
-.social li{
+.header-middle__picture{
+	display:block;
 	position:relative;
+	z-index:1;
 }
 
-.social li:not(last-child){
-	margin-bottom:20px;
+.social {
+	li{
+	position:relative;
+	
+		&:not(last-child){
+		margin-bottom:20px;
+		}
+	}
 }
 
 @media only screen and (max-width: 480px) { 

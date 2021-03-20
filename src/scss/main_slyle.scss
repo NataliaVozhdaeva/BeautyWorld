@@ -1,4 +1,4 @@
-.main_section{
+.main-section{
 	display:flex;
 	margin:auto;
 	max-width:1112px;
@@ -7,23 +7,52 @@
 }
 
 @media only screen and (max-width: 768px){
-	.main_section{
+	.main-section{
 		margin-bottom:25px;
 	}
 }
 
-.section_about{
+.section-about{
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
 	align-items:flex-end;
-}
-
-.section_about__discribe{
+	
+	&__describe{
 	width:50%;
+	}
+	
+	&__subtitle{
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 32px;
+	}
+	
+	&__text{
+	font-size: 16px;
+	line-height: 26px;
+	}
+	
+	&__more{
+	font-size: 14px;
+	line-height: 17px;
+	color:#278AFF;
+	}
+	
+	&__video{
+	width:443px;
+	height:295px;
+	background: transparent url('/img/video_pre.jpg') 0 0 / cover no-repeat ;
+	margin-bottom:30px;
+	}
 }
 
-.title__big{
+video{
+	width:443px;
+	height:295px;	
+}
+
+.title_big{
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: bold;
@@ -34,49 +63,35 @@
 	width:100%;
 }
 
-.section_about__subtitle{
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 32px;
-}
-
-.section_about__text{
-	font-size: 16px;
-	line-height: 26px;
-}
-
-.section_about__more{
-	font-size: 14px;
-	line-height: 17px;
-	color:#278AFF;
-}
-
 @media only screen and (max-width: 768px) { 
 	.main{
 		padding:0 30px;
 		width:100%;
 	}
 	
-	.section_about{
+	.section-about{
 		justify-content:center;
 		margin-bottom:50px;
-	}
-	
-	.section_about__discribe{
+		
+		&__describe{
 		width:100%;
 		margin-bottom:30px;
+		}
+		
+		&__video{
+		width: 100%;
+		height: auto;
+		max-height: 100%;
+		}
 	}
 	
-	
-	.section_about__video{
-	/*при экране 360 не уменьшается, а сдвигается вправо - не понимаю, почему  
-	max-width: 75%;
-    height: auto;*/
-	display:none;
+	video{
+		width: 100%;
+		height: auto;
 	}
 }
 
-.section_features{
+.section-features{
 	display:flex;
 	justify-content:space-between;
 }
@@ -101,42 +116,44 @@
 	text-align:center;
 }
 
-.section_features__comfort,
-.section_features__quality,
-.section_features__masters{
+.section-features__comfort,
+.section-features__quality,
+.section-features__masters{
 	padding:80px 30px 0;
 	position:relative;
 	margin-bottom:20px;
 }
 
-.section_features__comfort::before{
+.section-features{
+	&__comfort::before{
 	content:"";
-	background:url(img/comfort.jpg) no-repeat;
+	background:url(/img/comfort.jpg) no-repeat;
 	position:absolute;
 	width:60px;
 	height:60px;
 	top:0;
 	left:calc(50% - 30px);
-}
-
-.section_features__quality::before{
+	}
+	
+	&__quality::before{
 	content:"";
-	background:url(img/quality.jpg) no-repeat;
+	background:url(/img/quality.jpg) no-repeat;
 	position:absolute;
 	width:60px;
 	height:60px;
 	top:0;
 	left:calc(50% - 30px);
-}
-
-.section_features__masters::before{
+	}
+	
+	&__masters::before{
 	content:"";
-	background:url(img/masters.jpg) no-repeat;
+	background:url(/img/masters.jpg) no-repeat;
 	position:absolute;
 	width:60px;
 	height:60px;
 	top:0;
 	left:calc(50% - 30px);
+	}
 }
 
 .container{
@@ -161,7 +178,7 @@
 	margin-top:20px;
 }
 
- .section_popular__item{
+ .section-popular__item{
 	 padding:0 0;
 	 max-width:350px;
  }
@@ -180,7 +197,7 @@
 }
 
 @media only screen and (max-width: 480px){
-	.section_popular__item{
+	.section-popular__item{
 		max-width:90%;
     }
 	
@@ -198,18 +215,18 @@
 	display:flex;
 	justify-content:flex-start;
 	width:75%;
+	
+	&__item{
+	width:50%;
+	}
+	
+	&__item:first-child{
+	margin-right:125px;
+	}
 }
  
 .price_title{
 	font-weight: 500;
-}
- 
-.price_table__item{
-	width:50%;
-}
- 
-.price_table__item:first-child{
-	margin-right:125px;
 }
  
 td{
@@ -228,16 +245,16 @@ td:nth-child(2n){
 	.price_table{
 		width:75vw;
 		flex-wrap:wrap;
+		
+		&__item{
+		width:85vw;
+		}
+		
+		&__item:first-child{
+		margin-right:0;
+		}
 	 }
 	 
-	.price_table__item{
-		width:85vw;
-	}
-	
-	.price_table__item:first-child{
-		margin-right:0;
-	}
-	
 	td{
 	text-align: left;
 	vertical-align:middle;
@@ -245,7 +262,7 @@ td:nth-child(2n){
 	}
  }
  
-.section_masters{
+.section-masters{
 	background-color:#F8F6F7;
 } 
  
@@ -298,23 +315,31 @@ td:nth-child(2n){
 	 .container{
 		 max-width:100%;
 	 }
+	 
+	
  }
  
-.section_portfolio{
+ @media only screen and (max-width: 400px){
+	  .section-masters__item{
+		 margin-left:30px;
+	 }
+ }
+ 
+.section-portfolio{
 	position:relative;
-} 
-
-.section_portfolio::before{
-	content:url(img/arrow.png);
+	
+	&::before{
+	content:url(/img/arrow.png);
 	position:absolute;
 	top:75px;
 	right:50px;
 	width:20px;
 	height:15px;
-}
-
-.section_portfolio::after{
-	content:url(img/arrow.png);
+	cursor:pointer;
+	}
+	
+	&::after{
+	content:url(/img/arrow.png);
 	position:absolute;
 	top:76px;
 	right:115px;
@@ -322,7 +347,9 @@ td:nth-child(2n){
 	height:15px;
 	transform:rotate(180deg);
 	transform-origin:100% 50%;
-}
+	cursor:pointer;
+	}
+} 
 
 .container_portfolio{
 	margin:-50px 0 116px;
@@ -340,13 +367,12 @@ td:nth-child(2n){
 	position:relative;
 	overflow:hidden;
 	cursor:pointer;
-}
-
-.portfolio__card:hover{
+	
+	&:hover{
 	transform:scale(1.05);
-}
-
-.portfolio__card:hover::before{
+	}
+	
+	&:hover::before{
 	content:"";
 	position:absolute;
 	left:0;
@@ -356,11 +382,11 @@ td:nth-child(2n){
 	background-color:#000;
 	opacity:0.5;
 	z-index:1;
-}
- 
-.portfolio__card:hover::after{
+	}
+	
+	&:hover::after{
 	content:"Увеличить";
-	background:url(img/lupa.png) no-repeat 36px 110px;
+	background:url(/img/lupa.png) no-repeat 36px 110px;
 	position:absolute;
 	left:calc(50% - 60px);
 	top:0;
@@ -374,6 +400,7 @@ td:nth-child(2n){
 	align-items:center;
 	justify-content:center;
 	z-index:2;
+	}
 }
 
   @media only screen and (max-width: 768px){
@@ -397,7 +424,7 @@ td:nth-child(2n){
 	 
 	 .portfolio__card:hover::after{
 	content:"";
-	background:url(img/lupa.png) no-repeat 36px 110px;
+	background:url(/img/lupa.png) no-repeat 36px 110px;
 	position:absolute;
 	left:calc(50% - 60px);
 	top:0;
@@ -412,13 +439,13 @@ td:nth-child(2n){
 	justify-content:center;
 	z-index:2;
  }
- 
- .section_portfolio::before,
- .section_portfolio::after{
-	 display:none;
 }
+@media only screen and (max-width: 460px){
+	 .section-portfolio::before,
+	 .section-portfolio::after{
+		 display:none;
+	}
 }
-
 .clients__text{
 	font-size: 16px;
 	line-height: 20px;
@@ -428,7 +455,7 @@ td:nth-child(2n){
 	margin-bottom:50px;
 }
 
-.client_card_container{
+.client-card-container{
 	display:flex;
 	justify-content:space-around;
 	flex-wrap:wrap;
