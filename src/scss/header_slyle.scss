@@ -1,4 +1,6 @@
 @import 'libs';
+$btn-main-color: #FB9475;
+
 
 html{
 	box-sizing:border-box;
@@ -44,7 +46,7 @@ ul{
 }
 
 .header{
-	background-image:url('img/bg_top.png');
+	background-image:url('/img/bg_top.png');
 	margin-bottom:94px;
 }
 
@@ -123,7 +125,7 @@ ul{
 }	
 
 .btn{
-	background-color:#FB9475;
+	background-color:$btn-main-color;
 	font-size:14px;
 	border:none;
 	border-radius: 24px;
@@ -133,6 +135,11 @@ ul{
 	&_large{
 	width: 203px;
 	height: 48px;
+	}
+	
+	&:hover{
+		cursor:pointer;
+		background-color:darken($btn-main-color, 10%);
 	}
 }
 
