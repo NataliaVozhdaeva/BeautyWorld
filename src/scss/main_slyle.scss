@@ -209,19 +209,27 @@ video{
 
  .price__menu{
 	 margin-bottom:55px;
+	 
+	 .active{
+		 color:#00BF78;
+	 }
  }
  
 .price_table{
-	display:flex;
-	justify-content:flex-start;
-	width:75%;
+	display:none;
 	
 	&__item{
 	width:50%;
 	}
-	
+		
 	&__item:first-child{
 	margin-right:125px;
+	}
+		
+	&.active{
+		display:flex;
+		justify-content:flex-start;
+		width:75%;
 	}
 }
  
@@ -236,6 +244,8 @@ td{
 td:nth-child(2n){
 	color:#00BF78;
 } 
+
+
  
  @media only screen and (max-width: 768px){
 	.price__menu li{

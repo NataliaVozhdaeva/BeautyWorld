@@ -20,17 +20,15 @@
 		<div class="header-top">
 			<div class="header-top__logo"><a>Мир красоты</a>
 			</div>
-		
-				<!--<input type="checkbox" class="navigation__checkbox"/>
-				<label for="navigation__checkbox"></label> -->
-				
+
 				<nav class='navigation'>
-				  <ul class="menu header__menu">
-					<li><a href=#>Услуги и цены</a></li>
-					<li><a href=#>Мастера</a></li>
-					<li><a href=#>Наши работы</a></li>
-					<li><a href=#>О нас</a></li>
-					<li><a href=#>Контакты</a></li>
+				  <a href=# class="mobile-menu-btn"></a>
+				  <ul class="menu mobile-menu">
+					<li><a href=#price>Услуги и цены</a></li>
+					<li><a href=#masters>Мастера</a></li>
+					<li><a href=#portfolio>Наши работы</a></li>
+					<li><a href=#about>О нас</a></li>
+					<li><a href=#contacts>Контакты</a></li>
 				  </ul>
 				</nav>
 		
@@ -65,7 +63,7 @@
 	<main class="main">
 		<div class="main-section section-about">
 			  <div class="section-about__describe">
-				<h1 class="section__title title_big">О салоне</h1>
+				<h1 class="section__title title_big"><a name=about>О салоне</a></h1>
 				<p class="section-about__subtitle"> Мир красоты - это уютный салон в самом центре города. 
 				Здесь работают профессиональные визажисты, стилисты и мастера татуажа
 				<p class="section-about__text">Красота и хороший уход никогда не выходят из моды. Мы 
@@ -81,16 +79,16 @@
 			</div>
 			
 			<div class="main-section section-features row">
-				<div class="col-sm-4 section_features__comfort">
+				<div class="col-sm-4 section-features__comfort">
 					<h4 class="features_title title_small">Удобные кабинеты</h4>
 					<p class="section__text features__text"> Комфорт и стиль - принцип создания кабинетов салона красоты. 
 					Только эстетика и удобство для Вас
 				</div>
-				<div class="col-sm-4 section_features__quality">
+				<div class="col-sm-4 section-features__quality">
 					<h4 class="features_title title_small">Качественная косметика</h4>
 					<p class="section__text features__text"> 	Используем профессиональные материалы высшего качества лучших брендов			
 				</div>
-				<div class="col-sm-4 section_features__masters">
+				<div class="col-sm-4 section-features__masters">
 					<h4 class="features_title title_small">Опытные мастера</h4>
 					<p class="section__text features__text"> Работают только опытные мастера с чувством стиля. 
 					Смотрите наших специалистов в разделе Мастера
@@ -140,15 +138,16 @@
 			</div>
 			
 			<div class="main-section section-price">
-				<h1 class="section__title title_big">Услуги и цены</h1>
-				<nav class='price_navigation'>
+				<h1 class="section__title title_big"><a name=price>Услуги и цены</a></h1>
+				<nav class="price_navigation tabs">
+				  <a href=# class="mobile-price-btn"></a>
 				  <ul class="menu price__menu">
-					<li><a href=#>Стрижка и укладка</a></li>
-					<li><a href=#>Косметология</a></li>
-					<li><a href=#>Маникюр и педикюр</a></li>
-					<li><a href=#>Макияж</a></li>
-					<li><a href=#>Брови и ресницы</a></li>
-					<li><a href=#>Массаж</a></li>
+					<li><a >Стрижка и укладка</a></li>
+					<li><a >Косметология</a></li>
+					<li><a >Маникюр и педикюр</a></li>
+					<li><a >Макияж</a></li>
+					<li><a >Брови и ресницы</a></li>
+					<li><a >Массаж</a></li>
 				  </ul>
 				</nav>
 				<div class="price_table">
@@ -205,11 +204,127 @@
 					</tr>
 				  </table>
 				</div>
+				
+				<div class="price_table">
+				  <table class="price_table__item">
+					<tr>
+					  <td><h4 class="price_title title_small">Чистка лица</h4> 
+						<p class="section__text">Женщины
+					  </td>
+						<td>1200 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Чистка лица</h4> 
+						<p class="section__text">Мужчины
+					  </td>
+						<td>1200 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Анализ проблем</h4> 
+						<p class="section__text">Консультация
+					  </td>
+						<td>1200 ₽</td>
+					</tr>
+				  </table>
+				</div>
+				
+				<div class="price_table">
+				  <table class="price_table__item">
+					<tr>
+					  <td><h4 class="price_title title_small">Маникюр без покрытия</h4> 
+						<p class="section__text">Обрезной, аппаратный
+					  </td>
+						<td>1200 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Педикюр без покрытия</h4> 
+						<p class="section__text">Обрезной, аппаратный
+					  </td>
+						<td>2000 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Маникюр спокрытием</h4> 
+						<p class="section__text">Гель-лак
+					  </td>
+						<td>2000 ₽</td>
+					</tr>
+				 </table>
+			</div>
+			
+			<div class="price_table">
+				  <table class="price_table__item">
+					<tr>
+					  <td><h4 class="price_title title_small">Дневной макияж</h4> 
+						<p class="section__text">светлые тона
+					  </td>
+						<td>1200 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Вечерний макияж</h4> 
+						<p class="section__text">Яркий, заметный
+					  </td>
+						<td>2000 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Мастер-класс</h4> 
+						<p class="section__text">Материалы предоставляются
+					  </td>
+						<td>2000 ₽</td>
+					</tr>
+				 </table>
+			</div>
+			
+				<div class="price_table">
+				  <table class="price_table__item">
+					<tr>
+					  <td><h4 class="price_title title_small">Коррекция бровей</h4> 
+						<p class="section__text">Краска
+					  </td>
+						<td>1200 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Коррекция бровей</h4> 
+						<p class="section__text">Татуаж
+					  </td>
+						<td>2000 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Наращиваие ресниц</h4> 
+						<p class="section__text">Материалы предоставляются
+					  </td>
+						<td>2000 ₽</td>
+					</tr>
+				 </table>
+			</div>
+			
+			<div class="price_table">
+				  <table class="price_table__item">
+					<tr>
+					  <td><h4 class="price_title title_small">Массаж тела</h4> 
+						<p class="section__text">Обычный
+					  </td>
+						<td>1200 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Массаж тела</h4> 
+						<p class="section__text">Корректирующий
+					  </td>
+						<td>2000 ₽</td>
+					</tr>
+					<tr>
+					  <td><h4 class="price_title title_small">Массаж тела</h4> 
+						<p class="section__text">Спортивный
+					  </td>
+						<td>2000 ₽</td>
+					</tr>
+				 </table>
+			</div>
+				
 			</div>
 			
 			<div class="section-masters">
 			  <div class="main-section">
-				<h1 class="section__title title_big">Мастера</h1>
+				<h1 class="section__title title_big"><a name=masters>Мастера</a></h1>
 				<p class="section-masters__subtitle">Дружная команда настоящих профессионалов
 				
 				<div class="container row">
@@ -243,7 +358,7 @@
 			
 			<div class="section-portfolio">
 			  <div class="main-section">
-				<h1 class="section__title title_big">Наши работы</h1>
+				<h1 class="section__title title_big"><a name=portfolio>Наши работы</a></h1>
 			  </div>
 			 <div class="container-fluid container_portfolio row">
 			  <div class="col-md-3 col-sm-6">
@@ -278,7 +393,7 @@
 		  <div class="footer-top">
 		  <div class="footer-top__container">
 			<div class="footer-top__kontacts">
-				<h1 class="section__title title_big">Контакты</h1>
+				<h1 class="section__title title_big"><a name=contacts>Контакты</a></h1>
 				<div class="footer_text">
 					<p>Томск, проспект Ленина, дом 13
 					<p>8 (499) 686-17-62
@@ -315,17 +430,19 @@
 				</div>
 				<nav class='footer_navigation'>
 				  <ul class="menu footer__menu">
-					<li><a href=#>Услуги и цены</a></li>
-					<li><a href=#>Мастера</a></li>
-					<li><a href=#>Наши работы</a></li>
-					<li><a href=#>Контакты</a></li>
+					<li><a href=#price>Услуги и цены</a></li>
+					<li><a href=#masters>Мастера</a></li>
+					<li><a href=#portfolio>Наши работы</a></li>
+					<li><a href=#contacts>Контакты</a></li>
 				  </ul>
 				</nav>
 			</div>
 
 	</footer>
-	
   </div>	
+  
+  <script src="menu.js"></script>
+  <script src="main.js"></script>
   </body>
-
+  
 </html>
