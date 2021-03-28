@@ -337,30 +337,25 @@ td:nth-child(2n){
  
 .section-portfolio{
 	position:relative;
-	
-	&::before{
-	content:url(/img/arrow.png);
-	position:absolute;
-	top:75px;
-	right:50px;
-	width:20px;
-	height:15px;
-	cursor:pointer;
-	}
-	
-	&::after{
-	content:url(/img/arrow.png);
-	position:absolute;
-	top:76px;
-	right:115px;
-	width:20px;
-	height:15px;
-	transform:rotate(180deg);
-	transform-origin:100% 50%;
-	cursor:pointer;
-	}
 } 
 
+.portfolio-nav{
+		position:absolute;
+		top:75px;
+		right:50px;
+		cursor:pointer;
+		
+		&.prev-work,
+		 .next-work{
+			cursor:pointer;
+			margin-left:10px;
+		}
+	}
+
+.prev-work{
+	transform: rotate(180deg);
+}
+		
 .container_portfolio{
 	margin:-50px 0 116px;
 }
@@ -370,18 +365,17 @@ td:nth-child(2n){
 }
 
 .portfolio__card{
+	display:block;
 	background-size:cover;
 	width:338px;
 	height:338px;
-	border-radius:8px;
 	position:relative;
-	overflow:hidden;
 	cursor:pointer;
-	
+		
 	&:hover{
 	transform:scale(1.05);
 	}
-	
+		
 	&:hover::before{
 	content:"";
 	position:absolute;
@@ -410,6 +404,10 @@ td:nth-child(2n){
 	align-items:center;
 	justify-content:center;
 	z-index:2;
+	}
+	
+	& img{
+	border-radius: 8px;
 	}
 }
 

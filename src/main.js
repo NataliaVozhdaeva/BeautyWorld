@@ -52,6 +52,16 @@ class TabsManager {
     } 
 }
 
+$(function(){
+  $('#multiple-items').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll:1,
+	prevArrow:$('.prev-work'),
+	nextArrow:$('.next-work')
+  });
+});
+
 window.onload = function() { 
   const tabsElem = document.getElementsByClassName('price_navigation')[0]; 
   new TabsManager(tabsElem); 
