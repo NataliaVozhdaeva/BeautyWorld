@@ -244,8 +244,6 @@ td{
 td:nth-child(2n){
 	color:#00BF78;
 } 
-
-
  
  @media only screen and (max-width: 768px){
 	.price__menu li{
@@ -272,8 +270,29 @@ td:nth-child(2n){
 	}
  }
  
+ @media only screen and (max-width: 480px){
+	 .price_navigation{
+		 position:relative;
+		 
+		.mobile-price-btn{
+		position:absolute;
+		top:150px;
+		left:-200px;
+		background:url(/img/menu_icon.png) no-repeat;
+		background-size:contain;
+		width:75px;
+		height:75px;
+		}
+	 }
+	 
+	 .price_table{
+		 margin-top:100px;
+	 }
+ }
+ 
 .section-masters{
 	background-color:#F8F6F7;
+	padding-top:50px;
 } 
  
 .experience{
