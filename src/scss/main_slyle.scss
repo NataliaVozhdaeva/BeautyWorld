@@ -209,19 +209,27 @@ video{
 
  .price__menu{
 	 margin-bottom:55px;
+	 
+	 .active{
+		 color:#00BF78;
+	 }
  }
  
 .price_table{
-	display:flex;
-	justify-content:flex-start;
-	width:75%;
+	display:none;
 	
 	&__item{
 	width:50%;
 	}
-	
+		
 	&__item:first-child{
 	margin-right:125px;
+	}
+		
+	&.active{
+		display:flex;
+		justify-content:flex-start;
+		width:75%;
 	}
 }
  
@@ -262,8 +270,29 @@ td:nth-child(2n){
 	}
  }
  
+ @media only screen and (max-width: 480px){
+	 .price_navigation{
+		 position:relative;
+		 
+		.mobile-price-btn{
+		position:absolute;
+		top:150px;
+		left:-200px;
+		background:url(/img/menu_icon.png) no-repeat;
+		background-size:contain;
+		width:75px;
+		height:75px;
+		}
+	 }
+	 
+	 .price_table{
+		 margin-top:100px;
+	 }
+ }
+ 
 .section-masters{
 	background-color:#F8F6F7;
+	padding-top:50px;
 } 
  
 .experience{
@@ -327,30 +356,25 @@ td:nth-child(2n){
  
 .section-portfolio{
 	position:relative;
-	
-	&::before{
-	content:url(/img/arrow.png);
-	position:absolute;
-	top:75px;
-	right:50px;
-	width:20px;
-	height:15px;
-	cursor:pointer;
-	}
-	
-	&::after{
-	content:url(/img/arrow.png);
-	position:absolute;
-	top:76px;
-	right:115px;
-	width:20px;
-	height:15px;
-	transform:rotate(180deg);
-	transform-origin:100% 50%;
-	cursor:pointer;
-	}
 } 
 
+.portfolio-nav{
+		position:absolute;
+		top:75px;
+		right:50px;
+		cursor:pointer;
+		
+		&.prev-work,
+		 .next-work{
+			cursor:pointer;
+			margin-left:10px;
+		}
+	}
+
+.prev-work{
+	transform: rotate(180deg);
+}
+		
 .container_portfolio{
 	margin:-50px 0 116px;
 }
@@ -360,18 +384,17 @@ td:nth-child(2n){
 }
 
 .portfolio__card{
+	display:block;
 	background-size:cover;
 	width:338px;
 	height:338px;
-	border-radius:8px;
 	position:relative;
-	overflow:hidden;
 	cursor:pointer;
-	
+		
 	&:hover{
 	transform:scale(1.05);
 	}
-	
+		
 	&:hover::before{
 	content:"";
 	position:absolute;
@@ -400,6 +423,10 @@ td:nth-child(2n){
 	align-items:center;
 	justify-content:center;
 	z-index:2;
+	}
+	
+	& img{
+	border-radius: 8px;
 	}
 }
 

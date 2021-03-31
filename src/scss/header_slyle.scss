@@ -70,14 +70,8 @@ ul{
 	font-weight: bold;
 }
 
-/*
-Кнопка дя гамбургера. Не помню, зачем, помню, что была нужна. Дойдем до js соображу, надеюсь
-.navigation__checkbox{
-	display:none;  
-}*/
-
 .menu{
-	 li{
+	li{
 	display:inline-block;
 	font-size:14px;
 	line-height: 17px;
@@ -188,45 +182,47 @@ ul{
 	}
 	
 	.header-top{
-		align-items:center;
 		margin-bottom:85px;
-		margin-left:120px;
+		margin-left:20px;
 		text-align:center;
-	}
-	
-	.header__menu{
-		order:-1;
-		display:flex;
-		flex-direction:column;
-		position:relative;
-		z-index:5;
-		background-color:#FB9475;
-		color:#000;
-		display:none;
-	}
-	
-	.menu li{
-		padding-bottom:10px;
-		padding-top:10px;
+		flex-wrap:wrap;
+		justify-content:center;
 	}
 	
 	.navigation{
 		position:relative;
-		order:-1;
 	}
 	
-	.navigation::after{
-		content:'';
-		background:url(img/menu_icon.png) no-repeat;
+	.mobile-menu-btn{
+		position:absolute;
+		top:75px;
+		left:-190px;
+		background:url(/img/menu_icon.png) no-repeat;
 		background-size:contain;
 		width:75px;
 		height:75px;
-		position:absolute;
-		top:-30px;
-		left:-120px;
-		cursor:pointer;
-		margin-bottom:30px;
-		}
+	}
+		
+	.menu{
+		display:flex;
+		flex-direction:column;
+		position:relative;
+		z-index:5;
+		background-color:#e5e5e5;
+		color:#000;
+		display:none;
+		margin:20px auto;
+	}
+	
+	.menu li{
+		width:100%;
+		padding-bottom:10px;
+		padding-top:10px;
+	}
+	
+	.header-top__logo{
+		width:100%;
+	}
 	
 	.header-middle{
 		width:100vw;
@@ -271,46 +267,39 @@ ul{
 	}
 	
 	.header-top{
+		display:flex;
 		align-items:center;
 		margin-bottom:65px;
+		flex-wrap:wrap;
+		
+		&__kontacts{
+			margin:auto;
+		}
+		
+		&__logo{
+		margin:auto;
+		}
 	}
 	
 	.navigation{
-		position:relative;
-		order:-1;
-	}
-	
-	.navigation::after{
-		content:'';
-		background:url(img/menu_icon.png) no-repeat;
-		background-size:contain;
-		width:75px;
-		height:75px;
-		position:absolute;
-		top:-50px;
-		cursor:pointer;
-		margin-bottom:30px;
-		}
-	
-	.header__menu{
-		order:-1;
-		display:flex;
-		flex-direction:column;
-		position:relative;
-		z-index:5;
-		background-color:#FB9475;
-		color:#000;
-		display:none;
-	}
-	
-	.header__menu li{
-		padding-bottom:10px;
-		padding-top:10px;
+		width:80%;
+		margin:30px auto;
 	}
 	
 	.header-middle{
 		width:100vw;
 		flex-direction:column;
+		
+		&__girl{
+		display:none;
+		}
+		
+		&__hero{
+		width:100%;
+		margin:-30px auto 0;
+		flex-wrap:wrap;
+		text-align:center;
+		}
 	}
 	
 	.header::before{
@@ -318,23 +307,12 @@ ul{
 		width:95%;
 		height:95%;
 		position:absolute;
-		background:url(img/top_girl.png) no-repeat center;
+		background:url(/img/top_girl.png) no-repeat center;
 		background-size:contain;
 		opacity:0.3;
 		z-index:-3;
 	}
 	
-	.header-middle__girl{
-		display:none;
-	}
-	
-	.header-middle__hero{
-		width:100%;
-		margin:0 auto;
-		flex-wrap:wrap;
-		text-align:center;
-	}
-		
 	.social li{
 		list-style:none;
 		padding:0 20px;
