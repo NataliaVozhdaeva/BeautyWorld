@@ -1,19 +1,30 @@
 {
   "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
     "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
+    "cross-env": "^7.0.3",
     "cssnano": "^4.1.10",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "postcss": "^8.2.8"
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.2.8",
+    "webpack": "^5.30.0",
+    "webpack-stream": "^6.1.2"
   },
   "name": "beatuy_salon",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "dependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.13.0",
     "@fancyapps/fancybox": "^3.5.7",
     "abbrev": "^1.1.1",
     "accepts": "^1.3.7",
@@ -539,6 +550,7 @@
     "signal-exit": "^3.0.3",
     "simple-swizzle": "^0.2.2",
     "slash": "^3.0.0",
+    "slick-carousel": "^1.8.1",
     "snapdragon": "^0.8.2",
     "snapdragon-node": "^2.1.1",
     "snapdragon-util": "^3.0.1",
@@ -645,8 +657,8 @@
     "yeast": "^0.1.2"
   },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp build"
+    "start": "cross-env NODE_ENV=development gulp",
+    "build": "cross-env NODE_ENV=production gulp build"
   },
   "repository": {
     "type": "git",
