@@ -1,6 +1,7 @@
-import MobileMenu from './menu.js'
-import TabsManager from './tabs.js'
+import MobileMenu from './menu.js';
+import TabsManager from './tabs.js';
 import $ from 'jquery';
+import orderForm from './orderForm';
 
 $(function(){
   $('#multiple-items').slick({
@@ -31,5 +32,6 @@ form.addEventListener('submit', event => {
 window.onload = function() { 
   const tabsElem = document.getElementsByClassName('price_navigation')[0]; 
   new TabsManager(tabsElem); 
-  MobileMenu();
+  new MobileMenu();
+  new orderForm();
 }

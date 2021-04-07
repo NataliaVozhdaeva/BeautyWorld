@@ -138,6 +138,40 @@ ul{
 	}
 }
 
+.hidden{
+	display:none;
+}
+
+.order-form__inner,
+.hidden h2{
+	width:auto;
+	padding:10px;
+	margin:auto;
+}
+
+.form-control{
+	width:70%;
+	padding-bottom:10px;
+}
+
+.loader{
+	display:none;
+}
+
+.order-form_pending .loader{
+	display:inline-block;
+}
+
+.form__message{
+	display:none;
+	padding-top:20px;
+	color:green;
+}
+
+.form__message_visible .form__message{
+	display:inline-block;
+}
+
 .header-middle__girl{
 	position:relative;
 	flex-shrink:0;	
