@@ -19,3 +19,5 @@ function MobileMenu(){
 	  }); //btnMenu onclick
 	}); //btnMenus forEach
 };//MobileMenu
+
+export default MobileMenu;
