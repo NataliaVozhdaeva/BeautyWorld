@@ -16,7 +16,7 @@ export class HttpService {
 			method: 'POST',
 			body: stringifiedData,
 			headers:{
-				'contentType': 'application/json'
+				'Content-Type': 'application/json'
 			}
 		});
 		

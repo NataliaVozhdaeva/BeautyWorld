@@ -28,11 +28,11 @@ class orderForm{
 					masters.forEach(master => {
 					const option = document.createElement('option');
 					option.value = master.id;
-					option.textContent = `$(master.surName) $(master.firstName)`;
+					option.textContent = `${master.surName} ${master.firstName}`;
 					this.mastersSelect.add(option);
 					});//masters.forEach
 			} catch(error){
-				console.log(error);
+				console.error(error);
 			  }
 		}//buildMasterSelect
 		
@@ -43,11 +43,11 @@ class orderForm{
 					services.forEach(service => {
 					const option = document.createElement('option');
 					option.value = service.id;
-					option.textContent = `$(service.name)`;
+					option.textContent = `${service.name}`;
 					this.servicesSelect.add(option);
 					});//services.forEach
 			} catch(error){
-				console.log(error);
+				console.error(error);
 			  }
 		}//buildServiceSelect
 		
@@ -75,18 +75,17 @@ class orderForm{
 					this.formEl.reset();
 					
 					this._toggleMessageState();		
-
 										
 					setTimeout(function(){
 					$.fancybox.close();
 					}, 3000);
 					
 				} catch(error) {
-					console.log(error);					
+					console.error(error);					
 				} finally {
 					this._togglePendingState();					
 				}
-			}, 3000	);
+			}	);
 		}
 		
 		_togglePendingState(){
@@ -100,5 +99,3 @@ class orderForm{
 		}
 }	
 export default orderForm
-	
-	
