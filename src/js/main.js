@@ -10,11 +10,10 @@ $(function(){
 		prevArrow:$('.prev-work'),
 		nextArrow:$('.next-work')
   });
-});
+  
+  const form = document.getElementById('quick-contact');
 
-const form = document.getElementById('quick-contact');
-
-form.addEventListener('submit', event => {
+	form.addEventListener('submit', event => {
 	event.preventDefault();
 	
 	const {name, tel} = form.elements;
@@ -26,10 +25,11 @@ form.addEventListener('submit', event => {
 	
 	form.reset();
 	console.log(formData);
-});
-
-window.onload = function() { 
+  });
+  
   const tabsElem = document.getElementsByClassName('price_navigation')[0]; 
   new TabsManager(tabsElem); 
   MobileMenu();
-}
+  
+});
+
