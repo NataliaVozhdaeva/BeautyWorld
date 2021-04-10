@@ -1,6 +1,7 @@
-import MobileMenu from './menu.js'
-import TabsManager from './tabs.js'
+import MobileMenu from './menu.js';
+import TabsManager from './tabs.js';
 import $ from 'jquery';
+import orderForm from './orderForm';
 
 $(function(){
   $('#multiple-items').slick({
@@ -10,10 +11,11 @@ $(function(){
 		prevArrow:$('.prev-work'),
 		nextArrow:$('.next-work')
   });
-  
-  const form = document.getElementById('quick-contact');
+});
 
-	form.addEventListener('submit', event => {
+const form = document.getElementById('quick-contact');
+
+form.addEventListener('submit', event => {
 	event.preventDefault();
 	
 	const {name, tel} = form.elements;
@@ -25,11 +27,11 @@ $(function(){
 	
 	form.reset();
 	console.log(formData);
-  });
-  
-  const tabsElem = document.getElementsByClassName('price_navigation')[0]; 
-  new TabsManager(tabsElem); 
-  MobileMenu();
-  
 });
 
+window.onload = function() { 
+  const tabsElem = document.getElementsByClassName('price_navigation')[0]; 
+  new TabsManager(tabsElem); 
+  new MobileMenu();
+  new orderForm();
+}
